@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to JavaScript</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Quick inline styles for testing */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px; /* Adds space below the input section */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main container for page content -->
+  <div class="container">
+    
+    <!-- Heading and Introduction -->
+    <h1 id="welcome-text" class="fade-in">Welcome to JavaScript</h1>
+    <p class="intro-text">Enter your name.</p>
+
+      <!-- User Input for Custom Greeting with Button Below -->
+      <input type="text" id="user-name" placeholder="Enter your name" class="input-field">
+      <button id="change-text-btn" onclick="changeText()" class="main-button">See the Message</button>
+  
+    <!-- Countdown Timer Display -->
+    <p id="countdown-timer" class="countdown-text">
+      Days Until End of the Semester: <span id="days"></span> days
+    </p>
+
+    <!-- Random Quote Display -->
+    <p id="quote-display" class="quote-text">"A quote will appear here..."</p>
+    <button onclick="displayRandomQuote()" class="main-button">Get a New Quote</button>
+    
+  </div>
+
+  <!-- JavaScript file linked here -->
+  <script src="script.js"></script>
+  
+</body>
+</html>
+
